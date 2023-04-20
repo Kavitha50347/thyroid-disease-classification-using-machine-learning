@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Thyroid Disease Classification</title>
+	<style>
+		body {
+			background-image: url("../static/img/bg.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: white;
+		}
+
+
+		#btns {
+			text-align: right;
+		}
+
+		#btns button {
+			padding: 10px 20px;
+			cursor: pointer;
+		}
+
+		#title {
+			padding: 20px 200px;
+		}
+
+		#title h1{
+			font-size: 48px;
+		}
+
+		#title p {
+			font-size: 24px;
+			line-height: 2em;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="btns">
+		<a href="/home">
+			<button>Home</button>
+		</a>
+
+		<a href="/predict">
+			<button>Predict</button>
+		</a>
+	</div>
+
+	<div id="title">
+		<h1>Thyroid Disease Classification</h1>
+		<p>Based on the given input, it predicts Thyroid disease for your body condition is {{ result }}</p>
+	</div>
+
+</body>
+
+
+</html>

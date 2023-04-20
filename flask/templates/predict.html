@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thyroid Disease Classification</title>	
+	<style>
+		body {
+			background-image: url("../static/img/bg.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			color: white;
+		}
+
+		form div {
+			margin: 20px 0;
+			padding: 20px 0;
+		}
+
+		form label {
+			display: block;
+			margin-bottom: 10px;
+			color: #ffc0cb;
+			font-size: 20px;
+		}
+
+		#submit-btn {
+			background-color: #5CB85c;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 18px;
+			color: #f0f9f2;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+		<h1>Thyroid Disease Classification</h1>
+		
+		<form action="/submit" method="POST">
+
+			<div>
+				<label for="goitre">goitre</label>
+				<select name="goitre" id="goitre">
+					<option value="0">Male</option>
+					<option value="1">Female</option>
+				</select>
+			</div>
+
+
+			<div>
+				<label for="tumor">tumor</label>
+				<select name="tumor" id="tumor">
+					<option value="0">Male</option>
+					<option value="1">Female</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="hypopituitary">hypopituitary</label>
+				<select name="hypopituitary" id="hypopituitary">
+					<option value="0">Male</option>
+					<option value="1">Female</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="psych">psych</label>
+				<select name="psych" id="psych">
+					<option value="0">Male</option>
+					<option value="1">Female</option>
+				</select>
+			</div>
+
+			<div>
+				<label for="TSH">TSH</label>
+				<input type="text" name="TSH" id="TSH" placeholder="TSH">
+			</div>
+
+			<div>
+				<label for="T3">T3</label>
+				<input type="text" name="T3" id="T3" placeholder="T3">
+			</div>
+
+			<div>
+				<label for="TT4">TT4</label>
+				<input type="text" name="TT4" id="TT4" placeholder="TT4">
+			</div>
+
+			<div>
+				<label for="T4U">T4U</label>
+				<input type="text" name="T4U" id="T4U" placeholder="T4U">
+			</div>
+
+			<div>
+				<label for="FTI">FTI</label>
+				<input type="text" name="FTI" id="FTI" placeholder="FTI">
+			</div>
+
+			<div>
+				<label for="TBG">TBG</label>
+				<input type="text" name="TBG" id="TBG" placeholder="TBG">
+			</div>
+
+			<div>
+				<button type="submit" id="submit-btn">Submit</button>
+			</div>
+
+		</form>
+	
+</body>
+</html>
